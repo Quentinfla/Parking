@@ -1,4 +1,4 @@
-import {generateRandomNumberId} from "../utils/genereateRandomNumberId";
+import {generateRandomNumberId} from "../utils/generateRandomNumberId";
 
 export class Park {
     private id: number;

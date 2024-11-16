@@ -1,16 +1,16 @@
 import {GPS} from "./GPS";
-import {generateRandomNumberId} from "../utils/genereateRandomNumberId";
+import {generateRandomNumberId} from "../utils/generateRandomNumberId";
 import {Spot} from "./Spot";
 
 
 export class Parking{
-    private id : number;
-    private name : string;
-    private cityId : number;
-    private location : GPS;
-    private numberOfSpots : number;
-    private opened : boolean;
-    private hourlyRate : number;
+    id : number;
+    name : string;
+    cityId : number;
+    location : GPS;
+    numberOfSpots : number;
+    opened : boolean;
+    hourlyRate : number;
     private parkIds : number[];
 
 

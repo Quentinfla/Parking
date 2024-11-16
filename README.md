@@ -1,5 +1,6 @@
 Quentin FLAGEOLLET
 
+L'export des tests Postman sont dans le fichier tests/Postman 
 To install dependencies:
 ```sh
 bun install

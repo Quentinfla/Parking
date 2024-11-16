@@ -1,4 +1,4 @@
-import { generateRandomNumberId } from '../src/utils/genereateRandomNumberId';
+import { generateRandomNumberId } from '../src/utils/generateRandomNumberId';
 import { expect, test } from "bun:test";
 
 test('La function retourne bien un nombre à 6 chiffres' , () => {

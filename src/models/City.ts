@@ -1,15 +1,15 @@
 import {GPS} from "./GPS";
 import {toSlug} from "../utils/toSlug";
-import {generateRandomNumberId} from "../utils/genereateRandomNumberId";
+import {generateRandomNumberId} from "../utils/generateRandomNumberId";
 
 
 export class City{
-    private id : number;
-    private name : string;
+    id : number;
+    name : string;
     private slug : string;
     private parkingsIds : number[];
-    private country : string;
-    private location : GPS;
+    country : string;
+    location : GPS;
 
 
     constructor(name: string, country: string, location: GPS) {

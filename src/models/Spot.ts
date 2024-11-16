@@ -1,4 +1,4 @@
-import {generateRandomNumberId} from "../utils/genereateRandomNumberId";
+import {generateRandomNumberId} from "../utils/generateRandomNumberId";
 
 export class Spot {
     private id: number;
