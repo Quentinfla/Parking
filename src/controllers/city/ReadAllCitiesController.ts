@@ -1,10 +1,13 @@
 import { Context } from 'hono';
-import { cities } from '../../data/staticDataBase';
 import readAllCitiesView from '../../views/ReadAllCitiesView';
+import db from "../../data/bunDataBase";
 
 const ReadAllCitiesController = async (c: Context) => {
 
-    return c.html(readAllCitiesView({cities}));
+    const cities = db.query(`SELECT * FROM cities;`).all()
+    if(cities) {
+        return c.html(readAllCitiesView({cities}));
+    }
 };
 
 export default ReadAllCitiesController;

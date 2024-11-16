@@ -41,12 +41,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{base_url}}/cities",
+							"raw": "{{base_url}}cities",
 							"host": [
-								"{{base_url}}"
-							],
-							"path": [
-								"cities"
+								"{{base_url}}cities"
 							]
 						}
 					},
@@ -61,12 +58,49 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{base_url}}/parkings",
+							"raw": "{{base_url}}parkings",
 							"host": [
-								"{{base_url}}"
+								"{{base_url}}parkings"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "parkings 1",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}parkings/1",
+							"host": [
+								"{{base_url}}parkings"
 							],
 							"path": [
-								"parkings"
+								"1"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "parkings (Inexistant)",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}parkings/2222",
+							"host": [
+								"{{base_url}}parkings"
+							],
+							"path": [
+								"2222"
 							]
 						}
 					},

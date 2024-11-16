@@ -1,10 +1,13 @@
 import { Context } from 'hono';
-import { parkings } from '../../data/staticDataBase';
 import ReadAllParkingsView from "../../views/ReadAllParkingsView";
+import db from "../../data/bunDataBase";
 
 const ReadAllParkingsController = async (c: Context) => {
-    const htmlContent = ReadAllParkingsView({parkings});
-    return c.html(htmlContent);
+
+    const parkings = db.query(`SELECT * FROM parkings;`).all();
+    if(parkings) {
+        return c.html(ReadAllParkingsView({parkings}));
+    }
 };
 
 export default ReadAllParkingsController;

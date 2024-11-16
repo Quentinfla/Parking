@@ -6,19 +6,22 @@ type ReadOneParkingViewProps = {
     parking: Parking;
 };
 
+
+
 const ReadOneParkingView = ({ parking }: ReadOneParkingViewProps) => {
+    console.log(parking)
     return (
         <Layout pageTitle={`Parking: ${parking.name}`}>
             <div>
                 <h1>Parking: {parking.name}</h1>
                 <p>
-                    <strong>Nombre de places :</strong> {parking.numberOfSpots}
+                    <strong>Nombre de places :</strong> {parking.numberOfPlaces}
                 </p>
                 <p>
                     <strong>Tarif horaire :</strong> €{parking.hourlyRate.toFixed(2)}
                 </p>
                 <p>
-                    <strong>Localisation :</strong> Latitude: {parking.location.latitude}, Longitude: {parking.location.longitude}
+                    <strong>Localisation :</strong> {parking.location}
                 </p>
                 <p>
                     <strong>Ouvert :</strong> {parking.opened ? 'Oui' : 'Non'}
