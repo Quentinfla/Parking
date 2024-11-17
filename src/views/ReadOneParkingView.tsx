@@ -13,6 +13,7 @@ const ReadOneParkingView = ({ parking }: ReadOneParkingViewProps) => {
     return (
         <Layout pageTitle={`Parking: ${parking.name}`}>
             <div>
+                <a href="/parkings">Back to parkings</a>
                 <h1>Parking: {parking.name}</h1>
                 <p>
                     <strong>Nombre de places :</strong> {parking.numberOfPlaces}

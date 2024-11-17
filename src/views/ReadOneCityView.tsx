@@ -14,6 +14,7 @@ export const cityView = ({ city } : ReadOneCityViewProps) => {
     return (
         <Layout pageTitle={city.name}>
             <div>
+                <a href="/cities">Back to cities</a>
                 <h1>{city.name}</h1>
                 <p>
                     <strong>Pays:</strong> {city.country}
@@ -26,7 +27,8 @@ export const cityView = ({ city } : ReadOneCityViewProps) => {
                     <ul>
                         {cityParkings.map((park) => (
                             <li key={park.id}>
-                                <a href={`/parkings/${park.id}`}>{park.name}</a> - tarif horraire : {park.hourlyRate.toFixed(2)}€
+                                <a href={`/parkings/${park.id}`}>{park.name}</a> - tarif horraire
+                                : {park.hourlyRate.toFixed(2)}€
                             </li>
                         ))}
                     </ul>
@@ -38,8 +40,6 @@ export const cityView = ({ city } : ReadOneCityViewProps) => {
     );
 
 }
-
-
 
 
 export default cityView;

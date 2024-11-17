@@ -10,14 +10,16 @@ const ReadAllParkingsView = ({ parkings }: ParkingViewProps) => {
     return (
         <Layout pageTitle="Liste des Parkings">
             <div>
+                <a href="/">Back to home</a>
                 <h1>Liste des Parkings</h1>
                 {parkings.length > 0 ? (
-                <ul>{parkings.map((parking) => (
+                    <ul>{parkings.map((parking) => (
                         <li key={parking.id}>
-                            <a href={`/parkings/${parking.id}`}>{parking.name}</a> - tarif horaire : €{parking.hourlyRate.toFixed(2)}
+                            <a href={`/parkings/${parking.id}`}>{parking.name}</a> - tarif horaire :
+                            €{parking.hourlyRate.toFixed(2)}
                         </li>
-                ))}
-                </ul>
+                    ))}
+                    </ul>
                 ) : (
                     <p>Aucun parking disponible.</p>
                 )}

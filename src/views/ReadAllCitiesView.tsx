@@ -1,4 +1,5 @@
 import React from 'react';
+import '../../static/cityView.css';
 import {City} from '../models/City';
 import { Layout } from './shared/Layout';
 import {toSlug} from "../utils/toSlug";
@@ -11,6 +12,7 @@ export const cityView = ({ cities } : cityViewProps) => {
     return (
         <Layout pageTitle="Cities">
             <div>
+                <a href="/">Back to home</a>
                 <h1>Liste des Villes</h1>
                 <ul>
                     {cities.map((city) => (

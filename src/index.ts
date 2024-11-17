@@ -17,6 +17,37 @@ app.notFound((c) => {
         <html>
             <head>
                 <title>Erreur 404</title>
+                <style>
+                    body {
+                        background-color: #f4f4f9;
+                        font-family: Arial, sans-serif;
+                        text-align: center;
+                        padding: 20px;
+                    }
+                    h1 {
+                        font-size: 36px;
+                        color: #ff6b6b;
+                        margin-bottom: 10px;
+                    }
+                    p {
+                        font-size: 16px;
+                        color: #666;
+                        margin-bottom: 20px;
+                    }
+                    a {
+                        text-decoration: none;
+                        color: #0078d7;
+                        border: 2px solid #0078d7;
+                        padding: 10px 20px;
+                        border-radius: 5px;
+                        display: inline-block;
+                        margin-top: 10px;
+                    }
+                    a:hover {
+                        background-color: #0078d7;
+                        color: white;
+                    }
+                </style>
             </head>
             <body>
                 <h1>Erreur 404</h1>
@@ -32,10 +63,41 @@ app.onError((err, c) => {
         <html>
             <head>
                 <title>Erreur 500</title>
+                <style>
+                    body {
+                        background-color: #f4f4f9;
+                        font-family: Arial, sans-serif;
+                        text-align: center;
+                        padding: 20px;
+                    }
+                    h1 {
+                        font-size: 36px;
+                        color: #ff6b6b;
+                        margin-bottom: 10px;
+                    }
+                    p {
+                        font-size: 16px;
+                        color: #666;
+                        margin-bottom: 20px;
+                    }
+                    a {
+                        text-decoration: none;
+                        color: #0078d7;
+                        border: 2px solid #0078d7;
+                        padding: 10px 20px;
+                        border-radius: 5px;
+                        display: inline-block;
+                        margin-top: 10px;
+                    }
+                    a:hover {
+                        background-color: #0078d7;
+                        color: white;
+                    }
+                </style>
             </head>
             <body>
-                <h1>Error 500</h1>
-                <p>Une erreur inattendue est survenue</p>
+                <h1>Erreur 500</h1>
+                <p>Une erreur inattendue est survenue.</p>
                 <a href="/">Retour à l'accueil</a>
             </body>
         </html>
